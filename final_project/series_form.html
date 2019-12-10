@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/validar_serie.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <script src="js/validar_serie.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+        <nav>
+            <ul class="ulInicio">
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+            <ul>
+              <li><a href="movies_form.html">Ingresar Película</a></li>
+              <li><a href="php/lista_peliculas.php">Películas ingresadas</a></li>
+              <li><a class="active"href="series_form.html">Puntuar Serie</a></li>
+              <li><a href="php/lista_series.php">Series Puntuadas</a></li>
+            </ul>
+          </nav>
+    <div class="myContainer">
+      <div class="row">
+        <div class="column">
+          <div class="tituloCont">
+            <h1>Puntúa una serie</h1>
+            <p>No olvides poner tu nombre de usuario y correo, así otros usuarios sabrán quién puntuó la serie</p>
+        </div>
+        </div>
+        <div class="column">
+          <form
+            class="formBox"
+            action="php/insertar_serie.php"
+            method="POST"
+            id="series_form"
+          >
+            <label class="myLabel" for="correo">Email</label>
+            <input class="myInput" type="text" name="correo" id="correo" />
+
+            <label class="myLabel" for="usuario">Usuario</label>
+            <input class="myInput" type="text" name="usuario" id="usuario" />
+
+            <label class="myLabel" for="nombre">Nombre de Serie</label>
+            <input class="myInput" type="text" name="nombre" id="nombre" />
+
+            <label class="myLabel" for="puntuacion">Puntuación</label>
+            <input class="myInput" type="text" name="puntuacion" id="puntuacion" />
+
+            <label class="myLabel" for="idioma">Idioma</label>
+            <input class="myInput" type="text" name="idioma" id="idioma" />
+
+            <label class="myLabel" for="estreno">Estreno</label>
+            <input class="myInput" type="text" name="estreno" id="estreno" />
+
+            <label class="myLabel" for="temporadas">Temporadas</label>
+            <input
+              class="myInput"
+              type="text"
+              name="temporadas"
+              id="temporadas"
+            />
+
+            <label class="myLabel" for="comentario">Comentario</label>
+            <textarea class="myInput"
+            type="textarea"
+            name="comentario"
+            id="comentario">
+              
+            </textarea>
+            <button class="btn" id="enviarSeries">Ingresar Puntuación</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+</body>
+</html>

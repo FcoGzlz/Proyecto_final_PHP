@@ -1,0 +1,196 @@
+.formBoxEdit h1{
+    color: white;
+    text-align: center;
+    padding-bottom: 50px;
+    opacity: 0;
+  }
+  
+  .formBoxEdit .myLabel{
+    text-align: right;
+    padding: 0px;
+    font-size: 18px;
+  }
+  
+  .formBoxEdit {
+    margin-top: 4%;
+    position: absolute;
+    display: block;
+    width: 800px;
+    padding: 0px 50px;
+    margin-left: 30%;
+    border: none;
+    height: 850px;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 20px;
+  }
+  
+  .formBoxEdit .myInput[type="text"],
+  [type="password"],
+  [type="email"],
+  [type="date"],
+  [type="date"],
+  [type="number"],
+  [type="radio"],
+  .mySelect {
+    background: none;
+    display: block;
+    padding: 10px 10px;
+    border: 2px solid white;
+    margin: 10px auto;
+    width: 700px;
+    color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  
+  
+  .formBoxEdit .myInput[type="text"]:focus,
+  [type="password"]:focus,
+  [type="email"]:focus,
+  [type="date"]:focus,
+  [type="date"]:focus,
+  [type="number"]:focus,
+  .mySelect:focus {
+    border: 0;
+    background: none;
+    display: block;
+    border-bottom: 2px solid white;
+    margin: 10px auto;
+  }
+
+  .formBoxEdit .myInput[type="textarea"]{
+    width: 700px;
+    height: 70px;
+    display: block;
+    position: relative;
+    background: white;
+    opacity: 0.7;
+    border: none;
+    text-align: left;
+    padding: 10px 10px;
+  }
+  /* SECCIÓN DE ERRORES */
+  .formBoxEdit .myInput_error[type="text"]:focus,
+  [type="password"]:focus,
+  [type="email"]:focus,
+  [type="date"]:focus,
+  [type="date"]:focus,
+  [type="number"]:focus,
+  .mySelectError:focus{
+    border: 0;
+    background: none;
+    display: block;
+    padding: 10px 10px;
+    margin: 10px auto;
+    border-bottom: 2px solid red;
+  }
+  
+  .formBoxEdit .myInput_error[type="text"],
+  [type="password"],
+  [type="email"],
+  [type="date"],
+  [type="date"],
+  [type="number"],
+  .mySelectError,
+  [type="radio"] {
+    background: none;
+    display: block;
+    padding: 10px 10px;
+    border: 2px solid red;
+    margin: 10px auto;
+    width: 700px;
+    color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  /*FIN SECCIÓN DE ERRORES*/
+  .formBoxEdit .myInput[type="checkbox"]{
+    margin-left: 30px;
+    padding: 10px, 10px;
+  }
+  .formBoxEdit label {
+    color: white;
+  }
+  .formBoxEdit button {
+    margin: 10px;
+    padding: 10px 10px;
+    margin-left: 10px;
+    transform: translate(35%,10%)
+  }
+  .formBoxEdit .mySelect {
+    display: block;
+    -webkit-appearance: none;
+    border-bottom: 2px solid white;
+    cursor: pointer;
+  }
+  
+  .formBoxEdit .mySelect option{
+    background: black;
+  }
+  
+  .formBoxEdit .mySelect:focus {
+    display: block;
+    -webkit-appearance: button;
+    border-bottom: 2px solid white;
+  }
+  
+  .formBoxEdit .mySelectError{
+    display: block;
+    -webkit-appearance: button;
+    border-bottom: 2px solid red;
+    cursor: pointer;
+  }
+  
+  .formBoxEdit .mySelectError{
+   background: black;
+  }
+  
+  .formBoxEdit .mySelectError:focus{
+    border-bottom: 2px solid red;
+  }
+  
+  .formBoxEdit .btn {
+    border: 2px solid white;
+    background: none;
+    border-radius: 20px;
+    color: white;
+    width: 250px;
+    margin-left: 52%;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 5%;
+  }
+  
+  .formBoxEdit .btn:hover {
+    border: 2px solid white;
+    background: white;
+    border-radius: 20px;
+    color: black;
+    width: 250px;
+  }
+
+  .salir{
+    background: none;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 0;
+    width: 40px;
+    height: 40px;
+    margin-left: 100%;
+    cursor: pointer;
+    padding: 0px;
+}
+
+.salir a{
+  text-decoration: none;
+  color: white;
+}
+
+.salir a:hover{
+  color: red;
+}
+

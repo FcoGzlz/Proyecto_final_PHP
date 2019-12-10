@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <script src="js/scripts.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+        <nav>
+          <ul class="ulInicio">
+              <li><a href="index.html">Inicio</a></li>
+          </ul>
+            <ul>
+              <li><a class="active" href="movies_form.html">Ingresar Película</a></li>
+              <li><a href="php/lista_peliculas.php">Películas ingresadas</a></li>
+              <li><a href="series_form.html">Puntuar Serie</a></li>
+              <li><a href="php/lista_series.php">Series Puntuadas</a></li>
+            </ul>
+          </nav>
+    <div class="myContainer">
+      <div class="row">
+        <div class="column">
+          <div class="tituloCont">
+            <h1>Ingresa tu película</h1>
+            <p>Completa el formulario con los datos correspondientes</p>
+        </div>
+        </div>
+        <div class="column">
+          <form
+            class="formBox"
+            action="php/insertar_pelicula.php"
+            method="POST"
+            id="movies_form"
+          >
+            <label class="myLabel" for="nombre">Nombre</label>
+            <input class="myInput" type="text" name="nombre" id="nombre" />
+
+            <label class="myLabel" for="estreno">Estreno</label>
+            <input class="myInput" type="text" name="estreno" id="estreno" />
+
+            <label class="myLabel" for="director">Director</label>
+            <input class="myInput" type="text" name="director" id="director" />
+
+            <label class="myLabel" for="productor">Productor</label>
+            <input
+              class="myInput"
+              type="text"
+              name="productor"
+              id="productor"
+            />
+
+            <label class="myLabel" for="categoria">Categoría</label>
+            <select class="mySelect" name="categoria" id="categoria">
+              <option value="" disabled selected></option>
+              <option value="Comedia">Comedia</option>
+              <option value="Acción">Acción</option>
+              <option value="Drama">Drama</option>
+              <option value="Trhiller">Trhiller</option>
+              <option value="Suspenso">Suspenso</option>
+              <option value="Terror">Terror</option>
+              <option value="Romance">Romance</option>
+              <option value="Super Heroes">Super Héroes</option>
+              <option value="Ciencia Ficcion">Ciencia Ficción</option>
+            </select>
+
+            <label class="myLabel" for="idioma">Idioma</label>
+            <input class="myInput" type="text" name="idioma" id="idioma" />
+
+            <label class="myLabel" for="presupuesto">Presupuesto</label>
+            <input
+              class="myInput"
+              type="text"
+              name="presupuesto"
+              id="presupuesto"
+            />
+
+            <label class="myLabel" for="recaudacion">Recaudación</label>
+            <input
+              class="myInput"
+              type="text"
+              name="recaudacion"
+              id="recaudacion"
+            />
+
+            <button class="btn" id="enviar">Ingresar Película</button>
+          </form>
+        </div>
+        <p id="msg"></p>
+      </div>
+    </div>
+  </body>
+</html>
